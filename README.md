@@ -46,15 +46,19 @@ Bitrus provide a simple and powerfull REST API to perform nearly all actions whi
   }
   ```
   ### Data
-    ```
-       {
-      "meta": {
-        "msg": "",
-        "status": false
-      },
-      "data":{} || []
-    }
+  ```
+  {
+    "meta":{
+    "msg":"response message",
+    "status":true
+    },
+    "data":{} || []
+  }
   ```
   
 
 # Authentication
+
+The HTTP Authorization request header contains the credentials to authenticate a user agent with a server, usually after the server has responded with a 401 Unauthorized status and the WWW-Authenticate header This is the most common scenario for Authorization . Once the user is logged in, each subsequent request will include the token, allowing the user to access routes, services, and resources that are permitted with that token.In bitrus used Single Sign On feature , because of its small overhead and its ability to be easily used across different domains.
+
+# API Reference

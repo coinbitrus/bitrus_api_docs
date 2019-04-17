@@ -94,6 +94,7 @@ The HTTP Authorization request header contains the credentials to authenticate a
 | minSellPrice | min sell price description |
 | pair | coin pair like eth_btc |
 
+
 ### 2. Get current order book by coins pair
 | url => format 1 | https://bitrusapi.com/public/orderbook/depthchart/eth_usd |
 |-----|--------|
@@ -158,3 +159,41 @@ The HTTP Authorization request header contains the credentials to authenticate a
 | price | price description |
 | bidsvolume | bidsvolume description |
 | bidstotalvolume | bidstotalvolume description |
+
+
+
+### 2. OHCLV Data without timestamp
+| url | https://bitrusapi.com/public/market/price/ohclv?bsym=eth,ltc&qsym=btc |
+|-----|--------|
+| body | null |
+| query| bsym=eth,ltc & qsym=btc |
+| params | null |
+| Description | Get OHCLV of base symbols |
+
+### Response
+```
+{
+  "status": true,
+  "msg": "pair ohclv data",
+  "data": [
+    {
+      "pair": "eth_btc",
+      "open": 0.033,
+      "high": 0.001,
+      "close": 0.033,
+      "volume": 0.001,
+      "low": 0.001,
+      "price": 0.033
+    },
+    {
+      "pair": "ltc_btc",
+      "open": 0,
+      "high": 0,
+      "close": 0,
+      "volume": 0,
+      "low": 0,
+      "price": 0.0149
+    }
+  ]
+}
+```

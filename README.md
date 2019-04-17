@@ -23,3 +23,38 @@ Bitrus provide a simple and powerfull REST API to perform nearly all actions whi
 - AccessToken Are Passed Into The Rest API Via The AuthKey And AccessToken Headers.
 - AccessToken Secret-Keys Are Case Sensitive.
 - AccessToken Can Be Configured To Only Access Certain Types Of Secure Endpoints. For Example, One AccessToken Could Be Used For TRADE  Only, While Another AccessToken Can Access Everything Except For TRADE Routes.
+
+
+## Result Format
+ ### sucess
+ ```
+     {
+    "meta": {
+      "msg": "",
+      "status": true
+    }
+  }
+ ```
+ 
+ ### Failure
+  ```
+     {
+    "meta": {
+      "msg": "",
+      "status": false
+    }
+  }
+  ```
+  ### Data
+    ```
+       {
+      "meta": {
+        "msg": "",
+        "status": false
+      },
+      "data":{} || []
+    }
+  ```
+  
+
+# Authentication

@@ -197,3 +197,14 @@ The HTTP Authorization request header contains the credentials to authenticate a
   ]
 }
 ```
+### Description
+
+| key | Description |
+|-----|-------------|
+| pair | pair description |
+| open | open price of pair |
+| high | maximum price of pair in day |
+| close | closing price |
+| volume | total traded volume |
+| low | minimum price |
+| price | current maket price |

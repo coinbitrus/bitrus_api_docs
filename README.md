@@ -69,17 +69,6 @@ The HTTP Authorization request header contains the credentials to authenticate a
 
 | url | https://bitrusapi.com/public/market/ |
 | Description | get all coins pair current market price |
-| Response | ``` {
-  "meta": {
-    "msg": "market price of eth_usd",
-    "status": true
-  },
-  "data": {
-    "maxBuyPrice": 21,
-    "minSellPrice": 0,
-    "pair": "eth_usd"
-  }
-} ``` |
 
 | Key | Value |
 |-----|-------|

@@ -68,6 +68,9 @@ The HTTP Authorization request header contains the credentials to authenticate a
 ### Get market price of all coins pair
 | url | https://bitrusapi.com/public/market |
 |-----|--------|
+| body | null |
+| query| null |
+| params | pair(eth_btc) |
 | Description | get all coins pair current market price |
 
 ### Response 

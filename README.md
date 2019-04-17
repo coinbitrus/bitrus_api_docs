@@ -95,14 +95,22 @@ The HTTP Authorization request header contains the credentials to authenticate a
 | pair | coin pair like eth_btc |
 
 ### 2. Get current order book by coins pair
-| url | https://bitrusapi.com/public/orderbook/depthchart/eth_usd |
+| url => format 1 | https://bitrusapi.com/public/orderbook/depthchart/eth_usd |
 |-----|--------|
 | body | null |
 | query| null |
 | params | pair |
 | Description | get all coins pair current open orders |
 
-### Response 
+| url => format 2 | https://bitrusapi.com/public/orderbook/depthchart/eth_usd/array |
+|-----|--------|
+| body | null |
+| query| null |
+| params | pair |
+| Description | get all coins pair current open orders in array with quantity |
+
+
+### Response format 1
 ```
 {
   "meta": {
@@ -121,6 +129,31 @@ The HTTP Authorization request header contains the credentials to authenticate a
         "bidsvolume": 1,
         "bidstotalvolume": 1
       }
+    ],
+    "asks": [
+      
+    ]
+  }
+}
+```
+
+### Response format 2
+```
+{
+  "meta": {
+    "msgt": "depth chart in array format",
+    "status": true
+  },
+  "data": {
+    "bids": [
+      [
+        6,
+        5
+      ],
+      [
+        21,
+        1
+      ]
     ],
     "asks": [
       

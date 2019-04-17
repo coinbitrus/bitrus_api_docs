@@ -130,9 +130,7 @@ The HTTP Authorization request header contains the credentials to authenticate a
         "bidstotalvolume": 1
       }
     ],
-    "asks": [
-      
-    ]
+    "asks": []
   }
 }
 ```
@@ -146,18 +144,17 @@ The HTTP Authorization request header contains the credentials to authenticate a
   },
   "data": {
     "bids": [
-      [
-        6,
-        5
-      ],
-      [
-        21,
-        1
-      ]
+      [6,5],
+      [21,1]
     ],
-    "asks": [
-      
-    ]
+    "asks": []
   }
 }
 ```
+### Description
+
+| key | Description |
+|-----|-------------|
+| price | price description |
+| bidsvolume | bidsvolume description |
+| bidstotalvolume | bidstotalvolume description |

@@ -162,7 +162,7 @@ The HTTP Authorization request header contains the credentials to authenticate a
 
 
 
-### 2. OHCLV Data without timestamp
+### 3. OHCLV Data without timestamp
 | url | https://bitrusapi.com/public/market/price/ohclv?bsym=eth,ltc&qsym=btc |
 |-----|--------|
 | body | null |

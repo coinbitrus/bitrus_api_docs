@@ -61,11 +61,9 @@ Bitrus provide a simple and powerfull REST API to perform nearly all actions whi
 
 The HTTP Authorization request header contains the credentials to authenticate a user agent with a server, usually after the server has responded with a 401 Unauthorized status and the WWW-Authenticate header This is the most common scenario for Authorization . Once the user is logged in, each subsequent request will include the token, allowing the user to access routes, services, and resources that are permitted with that token.In bitrus used Single Sign On feature , because of its small overhead and its ability to be easily used across different domains.
 
-# API Reference
-
 # Market API'S reference
 
-### Get market price of all coins pair
+### 1. Get market price of all coins pair
 | url | https://bitrusapi.com/public/market |
 |-----|--------|
 | body | null |
@@ -96,3 +94,37 @@ The HTTP Authorization request header contains the credentials to authenticate a
 | minSellPrice | min sell price description |
 | pair | coin pair like eth_btc |
 
+### 2. Get current order book by coins pair
+| url | https://bitrusapi.com/public/orderbook/depthchart/eth_usd |
+|-----|--------|
+| body | null |
+| query| null |
+| params | pair |
+| Description | get all coins pair current open orders |
+
+### Response 
+```
+{
+  "meta": {
+    "msgt": "depth chart",
+    "status": true
+  },
+  "data": {
+    "bids": [
+      {
+        "price": 6,
+        "bidsvolume": 4,
+        "bidstotalvolume": 5
+      },
+      {
+        "price": 21,
+        "bidsvolume": 1,
+        "bidstotalvolume": 1
+      }
+    ],
+    "asks": [
+      
+    ]
+  }
+}
+```
